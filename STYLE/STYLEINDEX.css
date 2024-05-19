@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #4caf50; 
+  color: white; 
+  padding: 1rem;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+nav ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 100%;
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+}
+
+.box img {
+  max-width: 50%; 
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  margin: 0;
+}
+
+.social-box {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.rounded-box {
+  background-color: #4caf50;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.rounded-box a {
+  color: white;
+  text-decoration: none; 
+}
+
+.rounded-box a:hover {
+  text-decoration: underline; 
+}
+
+.social-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  padding: 1rem;
+  margin-top: 2rem; 
+  text-align: center; 
+  box-sizing: border-box;
+  max-width: 100%; 
+}
+
+
+.social-box h2 {
+  margin-top: 0;
+}
+
+.social-box a {
+  display: inline-block;
+  margin: 0.5rem;
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+.social-box a:hover {
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
